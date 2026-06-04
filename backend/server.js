@@ -23,6 +23,9 @@ app.use('/api/annonces', annoncesRoutes);
 const utilisateursRoutes = require('./routes/utilisateurs');
 app.use('/api/utilisateurs', utilisateursRoutes);
 
+const reponsesRoutes = require('./routes/reponses');
+app.use('/api/reponses', reponsesRoutes);
+
 app.get('/', (req, res) => {
   res.send("L'API de l'association fonctionne parfaitement !");
 });
