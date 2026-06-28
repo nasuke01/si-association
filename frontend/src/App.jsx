@@ -4,6 +4,7 @@ import Accueil from './pages/Accueil';
 import Inscription from './pages/Inscription';
 import Connexion from './pages/Connexion';
 import PublierAnnonce from './pages/PublierAnnonce';
+import Profil from './pages/Profil';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/connexion" element={<Connexion />} />
         <Route path="/inscription" element={<Inscription />} />
         <Route path="/publier" element={<PublierAnnonce />} />
+        <Route path="/profil" element={<Profil />} />
       </Routes>
     </Router>
   );

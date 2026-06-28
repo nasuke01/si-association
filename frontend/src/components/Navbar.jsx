@@ -33,7 +33,10 @@ function Navbar() {
             {utilisateur ? (
               <>
                 <li className="nav-item me-3">
-                  <span className="nav-link text-info">👤 {utilisateur.nom}</span>
+                  {/* MODIFICATION ICI : Le nom est maintenant un lien cliquable vers /profil */}
+                  <Link className="nav-link text-info fw-bold" to="/profil" title="Accéder à mon profil">
+                    👤 {utilisateur.nom}
+                  </Link>
                 </li>
                 <li className="nav-item">
                   <Link className="btn btn-outline-light me-2" to="/publier">+ Publier</Link>
