@@ -5,11 +5,9 @@ require('dotenv').config();
 
 const app = express();
 
-// --- Middlewares ---
-// Autorise React à communiquer avec notre API
 app.use(cors());
-// Permet de lire les données envoyées en format JSON
 app.use(express.json());
+app.use('/uploads', express.static('uploads'));
 
 // --- Connexion à MongoDB ---
 mongoose.connect(process.env.MONGO_URI)
